@@ -86,7 +86,7 @@ docker build --build-arg TMDB_V3_API_KEY=your_api_key_here -t netflix-clone .
 docker run --name netflix-clone-website --rm -d -p 80:80 netflix-clone
 ```
 
-## Todo
+## Todo 
 
 - Make the animation of video card portal more similar to Netflix.
 - Improve performance. I am using `context` and `provider` but all components subscribed to the context's value are re-rendered. These re-renders happen even if the part of the value is not used in render of the component. there are [several ways](https://blog.axlight.com/posts/4-options-to-prevent-extra-rerenders-with-react-context/) to prevent the re-renders from these behaviours. In addition to them, there may be several performance issues.
